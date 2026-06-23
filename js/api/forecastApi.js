@@ -1,4 +1,4 @@
-const API_KEY = '0104550a31ee1b84bdbeca71a8a9ca71';
+const API_KEY = 'ed78a9d375a0224f48d57f2455711a31';
 const BASE = 'https://api.openweathermap.org/data/2.5';
 
 export async function fetchForecastByCity(city, units = 'metric', lang = 'ru') {
