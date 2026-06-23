@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Погода</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Погода</h1>
+      <form id="search-form">
+        <input id="city-input" type="text" placeholder="Город (например, Москва)" />
+        <button type="submit">Поиск</button>
+      </form>
+    </header>
+
+    <section id="weather-card" class="card hidden">
+      <h2 id="city-name"></h2>
+      <div id="icon" class="icon"></div>
+      <div id="temp" class="temp"></div>
+      <div id="descr" class="descr"></div>
+      <ul id="details" class="details"></ul>
+    </section>
+
+    <section id="forecast-section" class="card hidden">
+        <h3>Прогноз</h3>
+        <div id="days-list" class="days-list"></div>
+        <div id="day-forecast" class="day-forecast"></div>
+    </section>
+
+
+    <div id="error" class="error hidden"></div>
+  </main>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
